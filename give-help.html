@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search For Help</title>
+    <link rel="stylesheet" href="give-help.css">
+</head>
+
+<body>
+    <div class="tb">
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Help-Line Number</th>
+            <th>Location</th>
+            <th>Help Type</th>
+            <th>Description</th>
+            <th>Credit</th>
+        </tr>
+        <tr>
+            <td>Hemant Sharma</td>
+            <td>9352423429</td>
+            <td id="locate">Churu (Rajasthan)</td>
+            <td>Doctor Consultant</td>
+            <td id="desc">Here we provides the doctor instruavtion with live session of you With doctors <a id="rdmr" onclick="letread()">Read More</a><span id="pmore"> provide you
+                the needed instruction regarding covid and your situation.</span><a id="rdls" onclick="readls()">Read Less</a></td>
+            <td>Chomu Srivastav</td>
+            </tr>
+        <tr>
+            <td>Mohit satiza</td>
+            <td>9555555555</td>
+            <td id="locate">Shrimadhaupur (Rajasthan)</td>
+            <td>Vehicle</td>
+            <td id="desc">Here we provides the Vehicles which Can Be for to Transport You to the hospital and and may be help you reach hospital in time.
+                <td>Chomu</td>
+            </tr>
+        <tr>
+            <td>Neeraj Sharma</td>
+            <td>9555555555</td>
+            <td id="locate">Shivpur (M.P)</td>
+            <td>Medicines</td>
+            <td id="desc">Here we provides the Medicines which will be according to doctor's Consultant related to covi-19.
+                <td>Chomu</td>
+            </tr>
+    </table>
+</div>
+</body>
+<script>
+    function letread(){
+        document.getElementById('rdls').style.display="inline-block";
+        document.getElementById('rdmr').style.display="none";
+        // document.getElementById('dots').style.display="none";
+        document.getElementById('pmore').style.display="inline";
+    }
+    function readls(){
+        document.getElementById('rdmr').style.display="inline-block";
+        // document.getElementById('dots').style.display="inline";
+        document.getElementById('pmore').style.display="none";
+        document.getElementById('rdls').style.display="none";
+    }
+</script>
+</html>
