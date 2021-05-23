@@ -29,7 +29,7 @@ td a{
     table{
         display: flex;
       flex-wrap: nowrap;
-      min-width: 570px;
+      width: 570px;
     }
     td,th{
         font-size: 12px;
